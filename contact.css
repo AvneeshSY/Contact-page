@@ -1,0 +1,168 @@
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.contact .can1{
+    max-width: 750px;
+    text-align: center;
+}
+.contact .can1 h2{
+    font-size: 36px;
+    font-weight: 500;
+    
+}
+.contact .can1 p{
+   
+    font-weight: 300;
+    
+}
+.can2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px ;
+}
+.can2 .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.can2 .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.can2 .contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    color: grey;
+}
+
+
+
+.can2 .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+    
+
+
+}
+
+.can2 .contactinfo .box .text h3{
+  font: 500px;
+}
+.contactform{
+width: 40%;
+padding: 40px;
+background: rgb(248, 242, 242);
+border-radius: 10px;
+border: 1px solid black;
+
+}
+a{
+    text-decoration: none;
+    text-decoration-line: none;
+    color: #333;
+}
+.contactform h2{
+    font-size: 30px;
+    font-weight: 500;
+
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+ .contactform .inputbox span{
+    position: absolute;
+    left:0;
+    padding: 5px 0;
+     font-size: 16px; 
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s; 
+
+} 
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span{
+    /* color:yellow; */
+    font-size: 20px;
+    transform: translateY(-28px);
+}
+ button{
+    width: 100px;
+    background: white;
+    border: none;
+    border: 1px solid #6c757d;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+}
+button:hover{
+    width: 100px;
+    background: #6c757d;
+    border: none;
+    border: 1px solid #6c757d;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+}
+/*..........................media ..........................*/
+@media (max-width:950px) {
+    .contact{
+        padding: 50px;
+       
+
+    }
+    /* .contactinfo .box{
+        margin-left: -45px
+    } */
+    .can2{
+        flex-direction: column;
+    }
+     .can1 .contactinfo{
+        margin-bottom: 40px;
+
+    }
+    .can1 .contactinfo{
+     width: 100%;
+    }
+}
+@media (max-width:450px){
+    .contactinfo .box{
+        margin-left: -45px;} 
+}
